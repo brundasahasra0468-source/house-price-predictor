@@ -1,0 +1,127 @@
+{
+  "project": "House Price Predictor (Ames, Iowa) - workshop model",
+  "dataset_source": "Kaggle House Prices competition train.csv (https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data), loaded via 'local'",
+  "target": "SalePrice",
+  "input_features": [
+    "GrLivArea",
+    "BedroomAbvGr",
+    "FullBath",
+    "OverallQual",
+    "YearBuilt",
+    "YearRemodAdd",
+    "GarageCars",
+    "YrSold",
+    "Neighborhood"
+  ],
+  "numeric_features": [
+    "GrLivArea",
+    "BedroomAbvGr",
+    "FullBath",
+    "OverallQual",
+    "YearBuilt",
+    "YearRemodAdd",
+    "GarageCars",
+    "YrSold"
+  ],
+  "categorical_features": [
+    "Neighborhood"
+  ],
+  "engineered_features": [
+    "HouseAge",
+    "YearsSinceRemodel"
+  ],
+  "input_ranges": {
+    "GrLivArea": {
+      "min": 334,
+      "max": 5642,
+      "median": 1473
+    },
+    "BedroomAbvGr": {
+      "min": 0,
+      "max": 8,
+      "median": 3
+    },
+    "FullBath": {
+      "min": 0,
+      "max": 3,
+      "median": 2
+    },
+    "OverallQual": {
+      "min": 1,
+      "max": 10,
+      "median": 6
+    },
+    "YearBuilt": {
+      "min": 1872,
+      "max": 2010,
+      "median": 1972
+    },
+    "YearRemodAdd": {
+      "min": 1950,
+      "max": 2010,
+      "median": 1994
+    },
+    "GarageCars": {
+      "min": 0,
+      "max": 4,
+      "median": 2
+    },
+    "YrSold": {
+      "min": 2006,
+      "max": 2010,
+      "median": 2008
+    }
+  },
+  "neighborhoods": [
+    "Blmngtn",
+    "Blueste",
+    "BrDale",
+    "BrkSide",
+    "ClearCr",
+    "CollgCr",
+    "Crawfor",
+    "Edwards",
+    "Gilbert",
+    "IDOTRR",
+    "MeadowV",
+    "Mitchel",
+    "NAmes",
+    "NPkVill",
+    "NWAmes",
+    "NoRidge",
+    "NridgHt",
+    "OldTown",
+    "SWISU",
+    "Sawyer",
+    "SawyerW",
+    "Somerst",
+    "StoneBr",
+    "Timber",
+    "Veenker"
+  ],
+  "selected_model": "Random Forest",
+  "cross_validation_metrics": {
+    "MAE": 21344.61917414041,
+    "RMSE": 33504.47565267324,
+    "R2": 0.8080197350245241
+  },
+  "test_metrics": {
+    "MAE": 19630.468296232877,
+    "RMSE": 28871.66374678071,
+    "R2": 0.8913249651982063
+  },
+  "training_configuration": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "cv_folds": 5,
+    "training_rows": 1168,
+    "test_rows": 292
+  },
+  "package_versions": {
+    "python": "3.12.7",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.0",
+    "numpy": "2.5.4",
+    "joblib": "1.6.0"
+  }
+}
