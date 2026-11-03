@@ -1,4 +1,24 @@
-# House Price Predictor: Build, Train & Deploy ML Models
+# House Price Predictor
+
+A Machine Learning project that predicts house prices using a trained model and Gradio interface.
+
+## Live Demo
+
+Try the deployed application here:
+
+https://huggingface.co/spaces/sahasra-15/house-price-predictor
+
+## GitHub Repository
+
+This repository contains the source code and files required for the House Price Predictor project.
+
+## Technologies Used
+
+- Python
+- Scikit-learn
+- Pandas
+- Gradio
+- Hugging Face Spaces# House Price Predictor: Build, Train & Deploy ML Models
 
 A hands-on workshop notebook that predicts Ames, Iowa house prices (2006–2010) and turns the trained pipeline into a Gradio app deployed on Hugging Face Spaces. It is a learning project, not a real-world valuation service.
 
